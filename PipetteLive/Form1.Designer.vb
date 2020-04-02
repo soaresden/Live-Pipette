@@ -55,12 +55,12 @@ Partial Class Form1
         '
         Me.WEB1.Location = New System.Drawing.Point(92, 92)
         Me.WEB1.Name = "WEB1"
-        Me.WEB1.Size = New System.Drawing.Size(159, 22)
+        Me.WEB1.Size = New System.Drawing.Size(181, 22)
         Me.WEB1.TabIndex = 0
         '
         'R1
         '
-        Me.R1.Location = New System.Drawing.Point(218, 18)
+        Me.R1.Location = New System.Drawing.Point(240, 18)
         Me.R1.Name = "R1"
         Me.R1.Size = New System.Drawing.Size(33, 22)
         Me.R1.TabIndex = 1
@@ -68,21 +68,21 @@ Partial Class Form1
         '
         'G1
         '
-        Me.G1.Location = New System.Drawing.Point(218, 44)
+        Me.G1.Location = New System.Drawing.Point(240, 44)
         Me.G1.Name = "G1"
         Me.G1.Size = New System.Drawing.Size(33, 22)
         Me.G1.TabIndex = 2
         '
         'B1
         '
-        Me.B1.Location = New System.Drawing.Point(218, 69)
+        Me.B1.Location = New System.Drawing.Point(240, 69)
         Me.B1.Name = "B1"
         Me.B1.Size = New System.Drawing.Size(33, 22)
         Me.B1.TabIndex = 3
         '
         'SavePixel
         '
-        Me.SavePixel.Location = New System.Drawing.Point(72, 207)
+        Me.SavePixel.Location = New System.Drawing.Point(82, 207)
         Me.SavePixel.Name = "SavePixel"
         Me.SavePixel.Size = New System.Drawing.Size(163, 23)
         Me.SavePixel.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(181, 21)
+        Me.Label1.Location = New System.Drawing.Point(203, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(34, 17)
         Me.Label1.TabIndex = 5
@@ -101,7 +101,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(167, 46)
+        Me.Label2.Location = New System.Drawing.Point(189, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 17)
         Me.Label2.TabIndex = 6
@@ -110,7 +110,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(179, 69)
+        Me.Label3.Location = New System.Drawing.Point(201, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 17)
         Me.Label3.TabIndex = 7
@@ -186,7 +186,7 @@ Partial Class Form1
         Me.Live.Controls.Add(Me.Label3)
         Me.Live.Location = New System.Drawing.Point(29, 79)
         Me.Live.Name = "Live"
-        Me.Live.Size = New System.Drawing.Size(261, 122)
+        Me.Live.Size = New System.Drawing.Size(279, 122)
         Me.Live.TabIndex = 14
         Me.Live.TabStop = False
         Me.Live.Text = "Actual Mouse Values"
@@ -203,7 +203,7 @@ Partial Class Form1
         '
         Me.SaveWeb.Location = New System.Drawing.Point(121, 280)
         Me.SaveWeb.Name = "SaveWeb"
-        Me.SaveWeb.Size = New System.Drawing.Size(159, 22)
+        Me.SaveWeb.Size = New System.Drawing.Size(187, 22)
         Me.SaveWeb.TabIndex = 16
         '
         'NotifyIcon1
@@ -214,11 +214,11 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(118, 233)
+        Me.Label7.Location = New System.Drawing.Point(178, 260)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(88, 17)
+        Me.Label7.Size = New System.Drawing.Size(85, 17)
         Me.Label7.TabIndex = 17
-        Me.Label7.Text = "Saved Value"
+        Me.Label7.Text = "Saved Color"
         '
         'Label8
         '
@@ -228,7 +228,7 @@ Partial Class Form1
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label8.Location = New System.Drawing.Point(72, 12)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(231, 46)
+        Me.Label8.Size = New System.Drawing.Size(225, 45)
         Me.Label8.TabIndex = 18
         Me.Label8.Text = "LIVE PIPETTE"
         '
@@ -238,7 +238,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.PictureBox1.Image = Global.PipetteLive.My.Resources.Resources.pipette
         Me.PictureBox1.ImageLocation = ""
-        Me.PictureBox1.Location = New System.Drawing.Point(10, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(13, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(66, 51)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -252,7 +252,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Location = New System.Drawing.Point(2, -5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(309, 66)
+        Me.GroupBox1.Size = New System.Drawing.Size(335, 66)
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         '
@@ -261,7 +261,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(18, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(310, 315)
+        Me.ClientSize = New System.Drawing.Size(336, 315)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Color1)
         Me.Controls.Add(Me.Label7)
@@ -270,7 +270,7 @@ Partial Class Form1
         Me.Controls.Add(Me.SavePixel)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Live Pipette v1"
         Me.Live.ResumeLayout(False)
         Me.Live.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
