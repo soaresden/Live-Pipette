@@ -84,7 +84,7 @@ Partial Class Form1
         '
         Me.SavePixel.Location = New System.Drawing.Point(86, 207)
         Me.SavePixel.Name = "SavePixel"
-        Me.SavePixel.Size = New System.Drawing.Size(163, 50)
+        Me.SavePixel.Size = New System.Drawing.Size(173, 50)
         Me.SavePixel.TabIndex = 4
         Me.SavePixel.Text = "Save Color " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CTRL+ALT+P"
         Me.SavePixel.UseVisualStyleBackColor = True
