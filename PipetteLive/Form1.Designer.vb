@@ -236,7 +236,7 @@ Partial Class Form1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.PictureBox1.Image = Global.PipetteLive.My.Resources.Resources.pipette
+        Me.PictureBox1.Image = Global.LivePipette.My.Resources.Resources.pipette
         Me.PictureBox1.ImageLocation = ""
         Me.PictureBox1.Location = New System.Drawing.Point(13, 12)
         Me.PictureBox1.Name = "PictureBox1"
@@ -270,7 +270,7 @@ Partial Class Form1
         Me.Controls.Add(Me.SavePixel)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Live Pipette v1"
+        Me.Text = "Live Pipette v1.1"
         Me.Live.ResumeLayout(False)
         Me.Live.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

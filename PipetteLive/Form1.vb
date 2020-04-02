@@ -84,9 +84,9 @@
         Dim g As Graphics = Graphics.FromHwnd(IntPtr.Zero)
         Dim hdc As IntPtr = g.GetHdc
         Dim TrueScreenSize As New Size(GetDeviceCaps(hdc, DESKTOPHORZRES), GetDeviceCaps(hdc, DESKTOPVERTRES))
-            Dim sclX As Single = CSng(Math.Round((TrueScreenSize.Width / Screen.PrimaryScreen.Bounds.Width), 2))
-            Dim sclY As Single = CSng(Math.Round((TrueScreenSize.Height / Screen.PrimaryScreen.Bounds.Height), 2))
-            g.ReleaseHdc(hdc)
+        Dim sclX As Single = CSng(Math.Round((TrueScreenSize.Width / Screen.FromControl(Me).Bounds.Width), 2))
+        Dim sclY As Single = CSng(Math.Round((TrueScreenSize.Height / Screen.FromControl(Me).Bounds.Height), 2))
+        g.ReleaseHdc(hdc)
 
             'Calculating the Real ScreenSize
             Dim RealHoriz As Integer = TrueScreenSize.Width.ToString
@@ -106,19 +106,24 @@
             Color1.BackColor = myBmp.GetPixel((MousePosition.X * DPI), (MousePosition.Y * DPI))
             myBmp.Dispose()
 
-            R1.Text = Color1.BackColor.R
-            G1.Text = Color1.BackColor.G
-            B1.Text = Color1.BackColor.B
-            WEB1.Text = "#" & Color1.BackColor.ToArgb().ToString("X6")
+        R1.Text = Format(Color1.BackColor.R, "000")
+        G1.Text = Format(Color1.BackColor.G, "000")
+        B1.Text = Format(Color1.BackColor.B, "000")
+
+        Dim Re As Integer = Integer.Parse(R1.Text)
+        Dim Gr As Integer = Integer.Parse(G1.Text)
+        Dim Bl As Integer = Integer.Parse(B1.Text)
+        Dim hexValue As String = String.Format("{0}{1}{2}", Re.ToString("X").PadLeft(2, "0"), Gr.ToString("X").PadLeft(2, "0"), Bl.ToString("X").PadLeft(2, "0"))
+
+
+        WEB1.Text = "#" & hexValue
 
     End Sub
     Private Sub SavePixel_Click(sender As Object, e As EventArgs) Handles SavePixel.Click
         SaveColor.BackColor = Color1.BackColor
         SaveWeb.Text = WEB1.Text
+        Clipboard.SetText(WEB1.Text)
     End Sub
-
-
-
 
 
     'WndProc nous permettra de traiter les messages windows
@@ -147,4 +152,5 @@
         Me.Opacity = 0.2
         On Error GoTo 0
     End Sub
+
 End Class
