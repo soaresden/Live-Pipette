@@ -82,11 +82,11 @@ Partial Class Form1
         '
         'SavePixel
         '
-        Me.SavePixel.Location = New System.Drawing.Point(82, 207)
+        Me.SavePixel.Location = New System.Drawing.Point(86, 207)
         Me.SavePixel.Name = "SavePixel"
-        Me.SavePixel.Size = New System.Drawing.Size(163, 23)
+        Me.SavePixel.Size = New System.Drawing.Size(163, 50)
         Me.SavePixel.TabIndex = 4
-        Me.SavePixel.Text = "Save : CTRL+ALT+P"
+        Me.SavePixel.Text = "Save Color " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CTRL+ALT+P"
         Me.SavePixel.UseVisualStyleBackColor = True
         '
         'Label1
@@ -162,7 +162,7 @@ Partial Class Form1
         '
         'Color1
         '
-        Me.Color1.Location = New System.Drawing.Point(43, 263)
+        Me.Color1.Location = New System.Drawing.Point(26, 264)
         Me.Color1.Multiline = True
         Me.Color1.Name = "Color1"
         Me.Color1.Size = New System.Drawing.Size(49, 39)
@@ -184,9 +184,9 @@ Partial Class Form1
         Me.Live.Controls.Add(Me.X1)
         Me.Live.Controls.Add(Me.Label2)
         Me.Live.Controls.Add(Me.Label3)
-        Me.Live.Location = New System.Drawing.Point(29, 79)
+        Me.Live.Location = New System.Drawing.Point(12, 79)
         Me.Live.Name = "Live"
-        Me.Live.Size = New System.Drawing.Size(279, 122)
+        Me.Live.Size = New System.Drawing.Size(312, 122)
         Me.Live.TabIndex = 14
         Me.Live.TabStop = False
         Me.Live.Text = "Actual Mouse Values"
@@ -201,9 +201,9 @@ Partial Class Form1
         '
         'SaveWeb
         '
-        Me.SaveWeb.Location = New System.Drawing.Point(121, 280)
+        Me.SaveWeb.Location = New System.Drawing.Point(104, 280)
         Me.SaveWeb.Name = "SaveWeb"
-        Me.SaveWeb.Size = New System.Drawing.Size(187, 22)
+        Me.SaveWeb.Size = New System.Drawing.Size(181, 22)
         Me.SaveWeb.TabIndex = 16
         '
         'NotifyIcon1
@@ -214,7 +214,8 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(178, 260)
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(152, 260)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(85, 17)
         Me.Label7.TabIndex = 17
