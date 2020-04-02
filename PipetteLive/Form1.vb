@@ -40,6 +40,10 @@
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Call OnTopAndShortcut()
+    End Sub
+
+    Private Sub OnTopAndShortcut()
         'Always on top
         Me.TopMost = True
         Me.Opacity = 1
@@ -51,7 +55,6 @@
         RegisterHotKey(Me.Handle, HOTKEY_ID1, FsModifiers.Alt_Ctrl, Keys.P)
         RegisterHotKey(Me.Handle, HOTKEY_ID2, FsModifiers.Alt_Ctrl, Keys.O)
     End Sub
-
     Private Sub Form1_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
         If Me.WindowState = FormWindowState.Minimized Then
             Me.Opacity = 0.1
@@ -77,6 +80,7 @@
         ShowInTaskbar = True
         Me.WindowState = FormWindowState.Normal
         NotifyIcon1.Visible = False
+        Call Me.OnTopAndShortcut()
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
