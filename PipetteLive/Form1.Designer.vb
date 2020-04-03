@@ -65,6 +65,7 @@ Partial Class Form1
         Me.R1.Size = New System.Drawing.Size(33, 22)
         Me.R1.TabIndex = 1
         Me.R1.Text = "255"
+        Me.R1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'G1
         '
@@ -72,6 +73,7 @@ Partial Class Form1
         Me.G1.Name = "G1"
         Me.G1.Size = New System.Drawing.Size(33, 22)
         Me.G1.TabIndex = 2
+        Me.G1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'B1
         '
@@ -79,10 +81,11 @@ Partial Class Form1
         Me.B1.Name = "B1"
         Me.B1.Size = New System.Drawing.Size(33, 22)
         Me.B1.TabIndex = 3
+        Me.B1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'SavePixel
         '
-        Me.SavePixel.Location = New System.Drawing.Point(86, 207)
+        Me.SavePixel.Location = New System.Drawing.Point(104, 207)
         Me.SavePixel.Name = "SavePixel"
         Me.SavePixel.Size = New System.Drawing.Size(173, 50)
         Me.SavePixel.TabIndex = 4
@@ -92,6 +95,8 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Red
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(203, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(34, 17)
@@ -101,6 +106,8 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Lime
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(189, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 17)
@@ -110,6 +117,8 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Blue
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label3.Location = New System.Drawing.Point(201, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 17)
@@ -121,10 +130,12 @@ Partial Class Form1
         '
         'X1
         '
+        Me.X1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.X1.Location = New System.Drawing.Point(92, 21)
         Me.X1.Name = "X1"
         Me.X1.Size = New System.Drawing.Size(66, 22)
         Me.X1.TabIndex = 8
+        Me.X1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
@@ -137,10 +148,12 @@ Partial Class Form1
         '
         'Y1
         '
+        Me.Y1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.Y1.Location = New System.Drawing.Point(92, 49)
         Me.Y1.Name = "Y1"
         Me.Y1.Size = New System.Drawing.Size(66, 22)
         Me.Y1.TabIndex = 10
+        Me.Y1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
         '
@@ -162,7 +175,7 @@ Partial Class Form1
         '
         'Color1
         '
-        Me.Color1.Location = New System.Drawing.Point(26, 264)
+        Me.Color1.Location = New System.Drawing.Point(14, 24)
         Me.Color1.Multiline = True
         Me.Color1.Name = "Color1"
         Me.Color1.Size = New System.Drawing.Size(49, 39)
@@ -172,8 +185,8 @@ Partial Class Form1
         '
         Me.Live.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(42, Byte), Integer))
         Me.Live.Controls.Add(Me.WEB1)
-        Me.Live.Controls.Add(Me.SaveColor)
         Me.Live.Controls.Add(Me.Label6)
+        Me.Live.Controls.Add(Me.Color1)
         Me.Live.Controls.Add(Me.R1)
         Me.Live.Controls.Add(Me.Label5)
         Me.Live.Controls.Add(Me.G1)
@@ -193,7 +206,7 @@ Partial Class Form1
         '
         'SaveColor
         '
-        Me.SaveColor.Location = New System.Drawing.Point(14, 21)
+        Me.SaveColor.Location = New System.Drawing.Point(26, 264)
         Me.SaveColor.Multiline = True
         Me.SaveColor.Name = "SaveColor"
         Me.SaveColor.Size = New System.Drawing.Size(49, 39)
@@ -201,6 +214,7 @@ Partial Class Form1
         '
         'SaveWeb
         '
+        Me.SaveWeb.BackColor = System.Drawing.SystemColors.Info
         Me.SaveWeb.Location = New System.Drawing.Point(104, 280)
         Me.SaveWeb.Name = "SaveWeb"
         Me.SaveWeb.Size = New System.Drawing.Size(181, 22)
@@ -264,7 +278,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(18, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(336, 315)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Color1)
+        Me.Controls.Add(Me.SaveColor)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.SaveWeb)
         Me.Controls.Add(Me.Live)
