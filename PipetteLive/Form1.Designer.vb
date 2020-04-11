@@ -42,13 +42,20 @@ Partial Class Form1
         Me.SaveColor = New System.Windows.Forms.TextBox()
         Me.SaveWeb = New System.Windows.Forms.TextBox()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.SavedR = New System.Windows.Forms.TextBox()
+        Me.SavedG = New System.Windows.Forms.TextBox()
+        Me.SavedB = New System.Windows.Forms.TextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Live.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'WEB1
@@ -60,7 +67,7 @@ Partial Class Form1
         '
         'R1
         '
-        Me.R1.Location = New System.Drawing.Point(240, 18)
+        Me.R1.Location = New System.Drawing.Point(332, 18)
         Me.R1.Name = "R1"
         Me.R1.Size = New System.Drawing.Size(33, 22)
         Me.R1.TabIndex = 1
@@ -69,7 +76,7 @@ Partial Class Form1
         '
         'G1
         '
-        Me.G1.Location = New System.Drawing.Point(240, 44)
+        Me.G1.Location = New System.Drawing.Point(332, 44)
         Me.G1.Name = "G1"
         Me.G1.Size = New System.Drawing.Size(33, 22)
         Me.G1.TabIndex = 2
@@ -77,7 +84,7 @@ Partial Class Form1
         '
         'B1
         '
-        Me.B1.Location = New System.Drawing.Point(240, 69)
+        Me.B1.Location = New System.Drawing.Point(332, 69)
         Me.B1.Name = "B1"
         Me.B1.Size = New System.Drawing.Size(33, 22)
         Me.B1.TabIndex = 3
@@ -85,7 +92,7 @@ Partial Class Form1
         '
         'SavePixel
         '
-        Me.SavePixel.Location = New System.Drawing.Point(104, 207)
+        Me.SavePixel.Location = New System.Drawing.Point(123, 207)
         Me.SavePixel.Name = "SavePixel"
         Me.SavePixel.Size = New System.Drawing.Size(173, 50)
         Me.SavePixel.TabIndex = 4
@@ -97,7 +104,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Red
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(203, 21)
+        Me.Label1.Location = New System.Drawing.Point(295, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(34, 17)
         Me.Label1.TabIndex = 5
@@ -108,7 +115,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Lime
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Location = New System.Drawing.Point(189, 46)
+        Me.Label2.Location = New System.Drawing.Point(281, 46)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 17)
         Me.Label2.TabIndex = 6
@@ -119,7 +126,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Blue
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(201, 69)
+        Me.Label3.Location = New System.Drawing.Point(293, 69)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 17)
         Me.Label3.TabIndex = 7
@@ -158,11 +165,11 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(49, 92)
+        Me.Label5.Location = New System.Drawing.Point(16, 95)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 17)
+        Me.Label5.Size = New System.Drawing.Size(70, 17)
         Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Web"
+        Me.Label5.Text = "WebCode"
         '
         'Label6
         '
@@ -183,7 +190,7 @@ Partial Class Form1
         '
         'Live
         '
-        Me.Live.BackColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.Live.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Live.Controls.Add(Me.WEB1)
         Me.Live.Controls.Add(Me.Label6)
         Me.Live.Controls.Add(Me.Color1)
@@ -199,14 +206,14 @@ Partial Class Form1
         Me.Live.Controls.Add(Me.Label3)
         Me.Live.Location = New System.Drawing.Point(12, 79)
         Me.Live.Name = "Live"
-        Me.Live.Size = New System.Drawing.Size(312, 122)
+        Me.Live.Size = New System.Drawing.Size(381, 122)
         Me.Live.TabIndex = 14
         Me.Live.TabStop = False
         Me.Live.Text = "Actual Mouse Values"
         '
         'SaveColor
         '
-        Me.SaveColor.Location = New System.Drawing.Point(26, 264)
+        Me.SaveColor.Location = New System.Drawing.Point(14, 21)
         Me.SaveColor.Multiline = True
         Me.SaveColor.Name = "SaveColor"
         Me.SaveColor.Size = New System.Drawing.Size(49, 39)
@@ -215,9 +222,9 @@ Partial Class Form1
         'SaveWeb
         '
         Me.SaveWeb.BackColor = System.Drawing.SystemColors.Info
-        Me.SaveWeb.Location = New System.Drawing.Point(104, 280)
+        Me.SaveWeb.Location = New System.Drawing.Point(72, 38)
         Me.SaveWeb.Name = "SaveWeb"
-        Me.SaveWeb.Size = New System.Drawing.Size(181, 22)
+        Me.SaveWeb.Size = New System.Drawing.Size(173, 22)
         Me.SaveWeb.TabIndex = 16
         '
         'NotifyIcon1
@@ -225,23 +232,13 @@ Partial Class Form1
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(152, 260)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(85, 17)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "Saved Color"
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Open Sans", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(72, 12)
+        Me.Label8.Location = New System.Drawing.Point(129, 12)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(225, 45)
         Me.Label8.TabIndex = 18
@@ -253,7 +250,7 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.PictureBox1.Image = Global.LivePipette.My.Resources.Resources.pipette
         Me.PictureBox1.ImageLocation = ""
-        Me.PictureBox1.Location = New System.Drawing.Point(13, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(10, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(66, 51)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -267,32 +264,106 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Location = New System.Drawing.Point(2, -5)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(335, 66)
+        Me.GroupBox1.Size = New System.Drawing.Size(413, 66)
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
+        '
+        'SavedR
+        '
+        Me.SavedR.BackColor = System.Drawing.SystemColors.Info
+        Me.SavedR.Location = New System.Drawing.Point(332, 15)
+        Me.SavedR.Name = "SavedR"
+        Me.SavedR.Size = New System.Drawing.Size(33, 22)
+        Me.SavedR.TabIndex = 21
+        '
+        'SavedG
+        '
+        Me.SavedG.BackColor = System.Drawing.SystemColors.Info
+        Me.SavedG.Location = New System.Drawing.Point(332, 43)
+        Me.SavedG.Name = "SavedG"
+        Me.SavedG.Size = New System.Drawing.Size(33, 22)
+        Me.SavedG.TabIndex = 22
+        '
+        'SavedB
+        '
+        Me.SavedB.BackColor = System.Drawing.SystemColors.Info
+        Me.SavedB.Location = New System.Drawing.Point(332, 67)
+        Me.SavedB.Name = "SavedB"
+        Me.SavedB.Size = New System.Drawing.Size(33, 22)
+        Me.SavedB.TabIndex = 23
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.LightGray
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.SavedB)
+        Me.GroupBox2.Controls.Add(Me.SaveColor)
+        Me.GroupBox2.Controls.Add(Me.SaveWeb)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.SavedG)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.SavedR)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 263)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(381, 94)
+        Me.GroupBox2.TabIndex = 24
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Saved Color"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Red
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(295, 18)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(34, 17)
+        Me.Label9.TabIndex = 14
+        Me.Label9.Text = "Red"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Lime
+        Me.Label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label10.Location = New System.Drawing.Point(281, 43)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(48, 17)
+        Me.Label10.TabIndex = 15
+        Me.Label10.Text = "Green"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Blue
+        Me.Label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label11.Location = New System.Drawing.Point(293, 66)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(36, 17)
+        Me.Label11.TabIndex = 16
+        Me.Label11.Text = "Blue"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(18, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(336, 315)
+        Me.ClientSize = New System.Drawing.Size(413, 366)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.SaveColor)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.SaveWeb)
         Me.Controls.Add(Me.Live)
         Me.Controls.Add(Me.SavePixel)
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Live Pipette v1.1"
+        Me.Text = "Live Pipette v1.2"
         Me.Live.ResumeLayout(False)
         Me.Live.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -315,8 +386,14 @@ Partial Class Form1
     Friend WithEvents SaveColor As TextBox
     Friend WithEvents SaveWeb As TextBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents SavedR As TextBox
+    Friend WithEvents SavedG As TextBox
+    Friend WithEvents SavedB As TextBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label11 As Label
 End Class

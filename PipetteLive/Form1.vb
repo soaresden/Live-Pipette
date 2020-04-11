@@ -125,7 +125,12 @@
     End Sub
     Private Sub SavePixel_Click(sender As Object, e As EventArgs) Handles SavePixel.Click
         SaveColor.BackColor = Color1.BackColor
+
+        SavedR.Text = R1.Text
+        SavedG.Text = G1.Text
+        SavedB.Text = B1.Text
         SaveWeb.Text = WEB1.Text
+
         Clipboard.SetText(WEB1.Text)
     End Sub
 
