@@ -59,7 +59,7 @@
 
     Private Sub Form1_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
         If Me.WindowState = FormWindowState.Minimized Then
-            Me.Opacity = 0.1
+            Me.Opacity = 0.3
             NotifyIcon1.Visible = True
 
             ' Generating Last Color text Balloon
@@ -67,8 +67,6 @@
             NotifyIcon1.Icon = My.Resources.pipette1
             NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
             NotifyIcon1.BalloonTipTitle = "PipetteLive"
-            NotifyIcon1.BalloonTipText = ""
-            NotifyIcon1.ShowBalloonTip(30000)
 
             ' Me.Hide()
             ShowInTaskbar = False
@@ -160,7 +158,7 @@
 
     Private Sub Form1_Deactivate(sender As Object, e As EventArgs) Handles Me.Deactivate
         On Error Resume Next
-        Me.Opacity = 0.2
+        Me.Opacity = 0.3
         On Error GoTo 0
     End Sub
 
